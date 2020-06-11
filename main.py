@@ -14,7 +14,6 @@ class colors:
     BOLD = '\033[1m' if config.print_in_color else ""
     UNDERLINE = '\033[4m' if config.print_in_color else ""
 
-print(colors.HEADER + "Remember you can change the settings in config.py!")
 # All variables related to the Twitter API
 twitter_api = twitter.Api(consumer_key=config.twitter_credentials["consumer_key"],
                           consumer_secret=config.twitter_credentials["consumer_secret"],
